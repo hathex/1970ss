@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+svg{
+/*
+    width: 100%;
+    height: 100vh;
+*/
+    background-color: #93eaff;
+}
+
+g#Lag_2 {
+    transform: translateX(-4107px);
+}
+
+@keyframes bil{
+    0%{transform: translateY(0px)}
+    100%{transform: translateY(-2px)}
+}
+
+g#forhjul{
+    animation: bil .5s
+        infinite linear
+}
+
+
+g#bagghjul{
+    animation: bil .5s
+        infinite linear
+}
+
+g#bilen-og-vindu{
+    animation: bil .5s
+        infinite linear
+}
+
+@keyframes stiper{
+    0%{transform: translateX(0)}
+    100%{transform: translateX(730px)}
+}
+
+#vej-fart-stiper{
+    animation: stiper 4.5s infinite linear;
+}
+
+@keyframes tra{
+    0%{transform: translateX(0)}
+    100%{transform: translateX(5000px)}
+}
+
+#tra{
+    animation: tra 45s
+            infinite linear
+}
+
+
+
+i.fa-bars {
+    color: white;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 50px;
+    display: none;
+}
+
+header {
+    position: relative;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #623203;
+    width: 70%;
+    /*    font-size: 25px;*/
+    padding: 16px 16px;
+    font-family: Arial;
+}
+
+.logo {
+    display: flex;
+    background-color: #623203;
+    width: 30%;
+    font-size: 25px;
+    justify-content: center;
+    padding: 16px 16px;
+    flex-wrap: wrap;
+}
+
+.logo li {
+    width: 15%;
+}
+
+
+.nav ul li {
+    color: white;
+    list-style: none;
+    text-align: center;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.nav a:hover {
+    border-bottom: 3px solid white;
+}
+
+.nav a.active {
+    border-bottom: 3px solid white;
+}
